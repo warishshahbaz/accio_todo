@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d5f22ee4f8.js" crossorigin="anonymous"></script>
+    <title>Todo list</title>
+</head>
+
+<body>
+    <div class="container">
+        <h4>To-Do List</h4>
+        <div class="input_container">
+            <input id="name" value="" class="input_box input_one" type="text" placeholder="Item Name" />
+            <input id="date" value="" class="input_box input_two " type="date" placeholder="Deadline" />
+            <select id="priority" class="input_box input_select">
+
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+
+            </select>
+            <button onclick="handleSubmit()" class="input_box btn">Add Item</button>
+        </div>
+        <h5>Today’s TodoList</h5>
+        <div id="today" class="box">
+            <!-- <div class="item_box">
+                <span>1</span>
+                <span>Accio Job 1</span>
+                <span>16/1/2022</span>
+                <span>Priority : High</span>
+                <span>Priority : High</span>
+                <span style="color: rgb(231, 224, 224);"> &#xf2ed;</span>
+                <span style="color: rgb(231, 224, 224);"> &#xf2ed;</span>
+            </div>
+            <div class="item_box">
+                <span>1</span>
+                <span>Accio Job 1</span>
+                <span>16/1/2022</span>
+                <span>Priority : High</span>
+                <span>Priority : High</span>
+                <span style="color: rgb(231, 224, 224);"> &#xf2ed;</span>
+                <span style="color: rgb(231, 224, 224);"> &#xf2ed;</span>
+
+            </div> -->
+        </div>
+        <h5>Future TodoList</h5>
+        <div id="future_Box" class="box">
+
+        </div>
+        <h5>Completed TodoList</h5>
+        <div id="completed" class="box">
+
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
